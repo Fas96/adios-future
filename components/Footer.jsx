@@ -1,7 +1,7 @@
 import {View, Text, TouchableOpacity} from 'react-native'
 import React from 'react'
 import {useNavigation} from "@react-navigation/native";
-import {colors} from "../styles/styles";
+import {colors, footerBaseStyle} from "../styles/styles";
 import {Avatar} from "react-native-paper";
 
 const Footer = (activeRoute="home") => {
@@ -73,17 +73,7 @@ const Footer = (activeRoute="home") => {
                 </TouchableOpacity>
             </View>
             <View
-            style={{
-                position:"absolute",
-                width:80,
-                height:80,
-                backgroundColor:colors.color2,
-                borderRadius:100,
-                justifyContent:"center",
-                alignItems:"center",
-                top:-50,
-                alignSelf:"center",
-            }}
+            style= {footerBaseStyle}
             >
                 <View style={{
                     borderRadius:100,

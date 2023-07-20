@@ -1,7 +1,7 @@
 import {View, Text, TouchableOpacity, Image} from 'react-native'
 import React from 'react'
 
-import {colors} from "../styles/styles";
+import {colors, productCardStyles} from "../styles/styles";
 import {Button} from "react-native-paper";
 
 const ProductCard = ({
@@ -23,20 +23,8 @@ const ProductCard = ({
             <View
 
             style={{
-                elevation:5,
-                width: 220,
-                alignItems: "center",
-                justifyContent: "space-between",
-                margin: 20,
-                borderRadius: 20,
-                height: 400,
-                backgroundColor: idx % 2 === 0 ? colors.color1 : colors.color2,
-
-                //added for the shadow
-                shadowOpacity: 0.2,
-                shadowColor:'black',
-                shadowOffset: { width: "1%", height: "1%" },
-                //end of shadow
+                ...productCardStyles,
+                backgroundColor: idx % 2 === 0 ? colors.color1 : colors.color2
             }}
             >
 

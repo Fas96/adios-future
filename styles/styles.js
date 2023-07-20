@@ -25,3 +25,31 @@ export const inputStyles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 20,
 });
+
+export  const footerBaseStyle={
+    position:"absolute",
+    width:80,
+    height:80,
+    backgroundColor:colors.color2,
+    borderRadius:100,
+    justifyContent:"center",
+    alignItems:"center",
+    top:-50,
+    alignSelf:"center",
+}
+
+
+export const productCardStyles ={
+    elevation:5,
+    width: 220,
+    alignItems: "center",
+    justifyContent: "space-between",
+    margin: 20,
+    borderRadius: 20,
+    height: 400,
+    //added for the shadow
+    shadowOpacity: 0.2,
+    shadowColor:'black',
+    shadowOffset: { width: "1%", height: "1%" },
+    //end of shadow
+}
