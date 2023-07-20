@@ -100,11 +100,12 @@ const SearchItem = ({imgSrc,name,price,handler}) => (
             padding:20,
             borderRadius:10,
             backgroundColor: colors.color2,
-
+         // added for the shadow
             elevation:5,
             shadowOpacity: 0.2,
             shadowColor:'black',
             shadowOffset: { width: "1%", height: "1%" },
+            // end of shadow
 
             width:"100%",
             alignItems:"center",
