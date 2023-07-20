@@ -7,6 +7,7 @@ import generateRandomUUID from "../utils/UUIDUtil";
 import ProductCard from "../components/ProductCard";
 import SearchModel from "../components/SearchModel";
 import {useNavigation} from "@react-navigation/native";
+import Footer from "../components/Footer";
 
 
 
@@ -184,10 +185,12 @@ const Home = () => {
                 </ScrollView>
             </View>
             {/* End Products */}
-
-
-
         </View>
+            {/*End Main View*/}
+
+            {/*Footer*/}
+            <Footer activeRoute={"home"} />
+            {/*End Footer*/}
         </>
     );
 }
