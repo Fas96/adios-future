@@ -53,6 +53,16 @@ const Home = () => {
             ],
             name: 'Dockerhub',
             price: 18.99
+        },
+        {
+            _id: 'ac9fe9dc-b0dc-45f7-8e56-396bb98627d7',
+            stock: 30,
+            images: [
+                { url: 'https://img.freepik.com/free-photo/asian-collage-female-woman-smiling-cheerful-joy-face-expression-hand-hold-notebook-tablet-with-backpack-ready-schoolhappiness-positive-young-asia-woman-confident-smile-back-school-lifestyle_609648-3067.jpg?size=626&ext=jpg&ga=GA1.1.1898337990.1689612184&semt=ais' },
+                { url: 'https://i.pinimg.com/750x/c4/1c/d0/c41cd0c54867c36dcb20abac010216e8.jpg' }
+            ],
+            name: 'Computers',
+            price: 19.99
         }
     ];
 

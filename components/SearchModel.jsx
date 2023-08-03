@@ -11,7 +11,7 @@ import {
 } from 'react-native'
 import React, {useEffect} from 'react'
 import {useNavigation} from "@react-navigation/native";
-import {colors} from "../styles/styles";
+import {colors, searchModelBaseStyle} from "../styles/styles";
 import {Headline, Searchbar} from "react-native-paper";
 
 const searchQuery={searchQuery}
@@ -96,23 +96,7 @@ const productdetails=(productdetails)=> {
 }
 const SearchItem = ({imgSrc,name,price,handler}) => (
     <TouchableOpacity onPress={handler}>
-        <View style={{
-            padding:20,
-            borderRadius:10,
-            backgroundColor: colors.color2,
-         // added for the shadow
-            elevation:5,
-            shadowOpacity: 0.2,
-            shadowColor:'black',
-            shadowOffset: { width: "1%", height: "1%" },
-            // end of shadow
-
-            width:"100%",
-            alignItems:"center",
-            justifyContent:"flex-end",
-            flexDirection: "row",
-            marginVertical:30
-        }}>
+        <View style={searchModelBaseStyle}>
 
 
         <Image source={{
